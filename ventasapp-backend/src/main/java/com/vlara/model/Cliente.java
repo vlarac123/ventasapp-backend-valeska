@@ -17,14 +17,14 @@ public class Cliente {
 	private Integer idCliente;
 	
 	@Size(min = 3, message = "Nombres debe tener minimo 3 caracteres")
-	@Column(name = "nombreCliente", length = 50) 
+	@Column(name = "nombre_cliente", length = 50) 
 	private String nombreCliente;
 	
-	@Column(name = "dirCliente", length = 50)
+	@Column(name = "dir_cliente", length = 50)
 	private String dirCliente;
 	
 	@Size(min = 9, max = 9, message = "Telefono debe tener 9 caracteres")
-	@Column(name = "telCliente", nullable = true, length = 9)
+	@Column(name = "tel_cliente", nullable = true, length = 9)
 	private String telCliente;
 
 	public Integer getIdCliente() {

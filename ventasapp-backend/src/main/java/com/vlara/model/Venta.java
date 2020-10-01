@@ -21,17 +21,17 @@ public class Venta {
 	private Integer idVenta;
 	
 	@ManyToOne
-	@JoinColumn(name = "idVendedor", nullable = false, foreignKey = @ForeignKey(name = "FK_consulta_vendedor"))
+	@JoinColumn(name = "id_vendedor", nullable = false, foreignKey = @ForeignKey(name = "FK_consulta_vendedor"))
 	private Vendedor idVendedor;
 	
 	@ManyToOne
-	@JoinColumn(name = "idCliente", nullable = false, foreignKey = @ForeignKey(name = "FK_consulta_cliente"))
+	@JoinColumn(name = "id_cliente", nullable = false, foreignKey = @ForeignKey(name = "FK_consulta_cliente"))
 	private Cliente idCliente;
 	
 	@Column(name = "costo", nullable = false,  scale = 2)
 	private double costo;
 	
-	@Column(name = "fechaVenta", nullable = false)
+
 	private LocalDateTime fechaVenta;
 
 	public Integer getIdVenta() {

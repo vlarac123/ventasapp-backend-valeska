@@ -21,14 +21,14 @@ public class Producto {
 	private Integer idProducto;
 	
 	@ManyToOne
-	@JoinColumn(name = "idMarca", nullable = false, foreignKey = @ForeignKey(name = "FK_consulta_marca"))
+	@JoinColumn(name = "id_marca", nullable = false, foreignKey = @ForeignKey(name = "FK_consulta_marca"))
 	private Marca idMarca;
 	
 	@Size(min = 3, message = "Descripcion debe tener minimo 3 caracteres")
 	@Column(name = "descripcion", nullable = false, length = 50)
 	private String descripcion;
 	
-	@Column(name = "valorProducto", nullable = false,  scale = 2)
+	@Column(name = "valor_producto", nullable = false,  scale = 2)
 	private double valorProducto;
 
 	public Integer getIdProducto() {

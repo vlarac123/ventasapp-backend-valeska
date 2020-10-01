@@ -25,11 +25,11 @@ public class Vendedor {
 	
 	
 	@Size(min = 3, message = "Nombres debe tener minimo 3 caracteres")
-	@Column(name = "nombreVendedor", nullable = false, length = 70)
+	@Column(name = "nombre_vendedor", nullable = false, length = 70)
 	private String nombreVendedor;
 	
 	@Size(min = 3, message = "Dirección debe tener minimo 3 caracteres")
-	@Column(name = "dirVendedor", nullable = false, length = 70)
+	@Column(name = "dir_vendedor", nullable = false, length = 70)
 	private String dirVendedor;
 
 	public Integer getIdVendedor() {

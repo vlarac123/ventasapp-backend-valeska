@@ -17,15 +17,15 @@ public class Supervisor {
 	private Integer idSupervisor;
 	
 	@Size(min = 3, message = "Nombres debe tener minimo 3 caracteres")
-	@Column(name = "nombreSupervisor", nullable = false, length = 50)
+	@Column(name = "nombre_supervisor", nullable = false, length = 50)
 	private String nombreSupervisor;
 	
 	@Size(min = 3, message = "Dirección debe tener minimo 3 caracteres")
-	@Column(name = "dirSupervisor", nullable = false, length = 50)
+	@Column(name = "dir_upervisor", nullable = false, length = 50)
 	private String dirSupervisor;
 	
 	@Size(min = 9, max = 9, message = "Telefono debe tener 9 caracteres")
-	@Column(name = "telSupervisor", nullable = true, length = 9)
+	@Column(name = "tel_supervisor", nullable = true, length = 9)
 	private String telSupervisor;
 
 	public Integer getIdSupervisor() {
