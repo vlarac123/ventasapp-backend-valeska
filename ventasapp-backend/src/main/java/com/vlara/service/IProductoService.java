@@ -1,5 +1,12 @@
 package com.vlara.service;
 
-public interface IProductoService {
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 
+
+import com.vlara.model.Producto;
+
+public interface IProductoService extends ICRUD<Producto> {
+
+	Page<Producto> listarPageable(Pageable pageable);
 }
